@@ -2,13 +2,16 @@ import React from 'react';
 import auth from '../../services/auth';
 import { useHistory } from 'react-router-dom';
 
+import Button from '../../components/Button';
+
 const Login: React.FC = () => {
   let history = useHistory();
 
   return (
     <div>
       <h1>Login</h1>
-      <button
+      <Button
+        variant="primary"
         type="button"
         onClick={() => {
           auth.login(() => {
@@ -17,7 +20,7 @@ const Login: React.FC = () => {
         }}
       >
         Login
-      </button>
+      </Button>
     </div>
   );
 };
