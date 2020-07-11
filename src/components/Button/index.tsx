@@ -3,6 +3,7 @@ import { Container } from './styles';
 
 export interface ButtonProps {
   variant: 'primary' | 'secondary';
+  block?: boolean;
 }
 
 type Props = ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
